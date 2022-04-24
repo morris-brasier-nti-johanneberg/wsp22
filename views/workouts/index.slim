@@ -1,4 +1,25 @@
-h1 All your workouts 
+h2 All your workouts 
 
-- workouts.each do |workout|
-    p = workout
+ul
+    - workouts.each do |workout|
+        li
+            a href="workouts/#{workout['id']}" #{workout["name"]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ - workouts.each do |workout|
+/     p = workout["name"]            

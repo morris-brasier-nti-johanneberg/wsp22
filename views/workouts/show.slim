@@ -1,0 +1,6 @@
+h2 #{result["name"]} 
+
+ol 
+    - result2.each do |result|
+        li  #{result["name"]}, sets #{result["sets"].to_i}, reps #{result["reps"].to_i}
+            
