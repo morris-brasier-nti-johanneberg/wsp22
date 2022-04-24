@@ -3,8 +3,10 @@ h2 All your workouts
 ul
     - workouts.each do |workout|
         li
-            a href="workouts/#{workout['id']}" #{workout["name"]}
-
+            a href="workouts/#{workout['id']}" #{workout["name"]} 
+            a href="workouts/#{workout['id']}/edit"Update
+            form method="POST" action="workouts/#{workout['id']}/delete"
+                input type="submit" value="Delete"  
 
 
 

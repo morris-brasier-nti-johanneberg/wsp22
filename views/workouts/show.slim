@@ -3,4 +3,9 @@ h2 #{result["name"]}
 ol 
     - result2.each do |result|
         li  #{result["name"]}, sets #{result["sets"].to_i}, reps #{result["reps"].to_i}
-            
+
+/ form action="/exercise/new" method="POST" 
+/     input type="text" name="exercise_name" placeholder="Name the exercise"
+/     input type="text" name="sets" placeholder="sets"
+/     input type="text" name="reps" placeholder="reps"
+/     input type="submit" value="Add Exercise"
